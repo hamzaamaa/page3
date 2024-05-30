@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrierung | Dan Aleko</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="http://localhost:3000/register" method="post">
+      <h1>Registrieren</h1>
+      <div class="input-box">
+        <input type="text" name="vorname" placeholder="Vorname" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="text" name="nachname" placeholder="Nachname" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="email" name="email" placeholder="Email-Adresse" required>
+        <i class='bx bxs-envelope'></i>
+      </div>
+      <div class="input-box">
+        <input type="date" name="geburtsdatum" placeholder="Geburtsdatum" required>
+        <i class='bx bxs-calendar'></i>
+      </div>
+      <div class="input-box">
+        <input type="text" name="strasse" placeholder="Straße" required>
+        <i class='bx bxs-home'></i>
+      </div>
+      <div class="input-box">
+        <input type="text" name="hausnummer" placeholder="Hausnummer" required>
+        <i class='bx bxs-home'></i>
+      </div>
+      <div class="input-box">
+        <input type="text" name="plz" placeholder="PLZ" required>
+        <i class='bx bxs-map'></i>
+      </div>
+      <div class="input-box">
+        <input type="text" name="stadt" placeholder="Stadt" required>
+        <i class='bx bxs-city'></i>
+      </div>
+      <div class="input-box">
+        <select name="sicherheitsfrage" required>
+          <option value="" disabled selected>Sicherheitsfrage</option>
+          <option value="Lehrer">Wie hieß Ihr Lieblingslehrer in der Schule?</option>
+          <option value="Film">Wie heißt Ihr Lieblingsfilm?</option>
+          <option value="Auto">Was war Ihr erstes Auto?</option>
+          <option value="Farbe">Ihre Lieblingsfarbe?</option>
+        </select>
+      </div>
+      <div class="input-box">
+        <input type="text" name="sicherheitsantwort" placeholder="Sicherheitsantwort" required>
+        <i class='bx bxs-help-circle'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" name="password" placeholder="Passwort" required>
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" name="confirm_password" placeholder="Passwort bestätigen" required>
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <button type="submit" class="btn">Registrieren</button>
+      <div class="register-link">
+        <p>Haben Sie schon ein Konto? <a href="login.html">Login</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
